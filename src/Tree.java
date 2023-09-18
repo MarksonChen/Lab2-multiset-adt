@@ -5,8 +5,8 @@ public class Tree<T> implements MultiSet<T>{
     private ArrayList<Object> subtrees;
 
     public Tree(){
-        root = null;
-        subtrees = new ArrayList<>();
+        this.root = null;
+        this.subtrees = new ArrayList<>();
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Tree<T> implements MultiSet<T>{
 
     @Override
     public boolean is_empty() {
-        return false;
+        return this.root == null;
     }
 
     @Override
